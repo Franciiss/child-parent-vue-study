@@ -94,16 +94,9 @@ No exemplo, a mudança do valor do componente v-date-picker através do evento `
 
 O modificador `sync` é uma forma de criar uma "interligação bidirecional" entre o componente pai e filho. Desta forma, o Vue.Js 2x recomenda que se utilize o padrão `update:nomeDaProp`.
 
-  
-
 Então o componente pai pode ouvir da seguinte forma:
 
-  
-
-<datePicker v-bind:data="dataInicio" v-on:update:data="dataInicio = $event" />
-
-  
-  
+    <datePicker v-bind:data="dataInicio" v-on:update:data="dataInicio = $event" />
 
 Por conveniência o Vue.Js utiliza um atalho padrão para o modificador `.sync`:
 
