@@ -15,7 +15,6 @@
         <v-text-field
           v-model="computedDateFormatted"
           :label="label"
-          hint="MM/DD/YYYY format"
           persistent-hint
           prepend-icon="mdi-calendar"
           readonly
